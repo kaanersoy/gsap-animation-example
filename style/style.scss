@@ -1,0 +1,22 @@
+@import url("./web-clash-display/css/clash-display.css");
+
+$font-regular: "ClashDisplay-Regular";
+$font-semibold: "ClashDisplay-Semibold";
+$font-bold: "ClashDisplay-Bold";
+$font-medium: "ClashDisplay-Medium";
+
+* {
+  font-family: $font-regular;
+}
+
+.box {
+  margin: 0 auto;
+  margin-top: calc(100vh + 150px);
+  width: 500px;
+  height: 500px;
+  background-color: darkblue;
+  object-fit: contain;
+  img {
+    width: 100%;
+  }
+}
