@@ -9,6 +9,7 @@ Demo: [Github Pages - Gsap Horizontal Example](https://kaanersoy.github.io/gsap-
 - Javascript
 - SCSS
 - GSAP - Scrolltrigger
+- Jekyll / Ruby
 - ...
 
 ## 📦 Installation
