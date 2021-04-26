@@ -38,6 +38,7 @@ function controlUrlForActiveLink() {
 
   navbarList.forEach((navEl) => {
     const childUrl = new URL(navEl.children[0].href)
+    if ([...navEl.classList].includes('active')) navEl.classList.remove('active')
     if (childUrl.pathname == currentPath) {
       navEl.classList.add('active')
     }
