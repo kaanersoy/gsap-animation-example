@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="{{'/' | relative_url}}" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,8 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../assets/style/style.css" />
+    {{ "/assets/css/poole.css" | relative_url }}
+    <link rel="stylesheet" href="{{'../assets/style/style.css' | relative_url }}" />
   </head>
   <body data-barba="wrapper">
     <header>
@@ -53,8 +55,8 @@
     <script src="https://unpkg.com/@barba/core"></script>
 
     <!-- Additional Script -->
-    <script src="../assets/js/mouse-events.js"></script>
-    <script src="../assets/js/animations.js"></script>
-    <script src="../assets/js/app.js"></script>
+    <script src="{{'../assets/js/mouse-events.js' | relative_url}}"></script>
+    <script src="{{'../assets/js/animations.js' | relative_url}}"></script>
+    <script src="{{'../assets/js/app.js' | relative_url}}"></script>
   </body>
 </html>
