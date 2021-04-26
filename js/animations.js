@@ -28,10 +28,16 @@ function scrubElement(selector, scrubX, scrubY) {
   })
 }
 
+function riseText(selector) {
+  const tl = gsap.timeline({ scrollTrigger: { trigger: selector, toggleActions: 'play pause resume reset' } })
+  tl.from(selector, { y: 70, x: 3, duration: 1, skewType: 'simple', skewY: -5, stagger: 0.18 })
+}
+
 function callAllAnimations() {
   animateImagesClipPath('.animate-image')
   scrubElement('#box-1-head', -30, 60)
   scrubElement('#scrub', 30, -20)
+  riseText('.text-block .line p')
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
