@@ -32,8 +32,21 @@ function loaderTransition() {
   tl1.to('ul.preload-boxes li', { duration: 0.6, ease: 'expo.in', scaleY: 0, stagger: 0.05 })
 }
 
+function controlUrlForActiveLink() {
+  const currentPath = window.location.pathname
+  const navbarList = document.querySelectorAll('nav ul li')
+
+  navbarList.forEach((navEl) => {
+    const childUrl = new URL(navEl.children[0].href)
+    if (childUrl.pathname == currentPath) {
+      navEl.classList.add('active')
+    }
+  })
+}
+
 document.addEventListener('DOMContentLoaded', function (event) {
   window.addEventListener('load', async function () {
+    controlUrlForActiveLink()
     controlLinkEvents()
     loaderTransition()
     barba.init({
@@ -50,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     barba.hooks.after(() => {
       window.scrollTo(0, 0)
       callHomeAnimations()
+      controlUrlForActiveLink()
     })
   })
 })
