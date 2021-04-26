@@ -37,10 +37,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     controlLinkEvents()
     loaderTransition()
     barba.init({
+      sync: true,
       transitions: [
         {
           async leave(data) {
-            pageTransition()
+            await pageTransition()
+            await delay(600)
           },
         },
       ],
