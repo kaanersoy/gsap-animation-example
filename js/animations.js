@@ -28,11 +28,15 @@ function scrubElement(selector, scrubX, scrubY) {
   })
 }
 
+function callAllAnimations() {
+  animateImagesClipPath('.animate-image')
+  scrubElement('#box-1-head', -30, 60)
+  scrubElement('#scrub', 30, -20)
+}
+
 document.addEventListener('DOMContentLoaded', function (event) {
   window.addEventListener('load', function () {
     gsap.registerPlugin(ScrollTrigger)
-    animateImagesClipPath('.animate-image')
-    scrubElement('#box-1-head', 10, 150)
-    scrubElement('#scrub', 120, -30)
+    callAllAnimations()
   })
 })
