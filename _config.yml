@@ -30,7 +30,7 @@ twitter_username: kaanersoy01
 github_username: kaanersoy
 
 # Build settings
-theme: -
+theme: minima
 plugins:
   - jekyll-feed
 # Exclude from processing.
