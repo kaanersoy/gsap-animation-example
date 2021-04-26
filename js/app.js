@@ -47,5 +47,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
         },
       ],
     })
+    barba.hooks.after(() => {
+      window.scrollTo(0, 0)
+      callAllAnimations()
+    })
   })
 })
