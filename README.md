@@ -2,7 +2,7 @@
 
 A app just shows how to build a horizontal page with Greensock GSAP Scrolltrigger plugin
 
-Demo: [Github Pages - Gsap Horizontal Example](https://kaanersoy.github.io/gsap-horizontal-example/)
+Demo: [Github Pages - Gsap Animation Example](https://kaanersoy.github.io/gsap-animation-example/)
 
 ## 💻 Techs
 
