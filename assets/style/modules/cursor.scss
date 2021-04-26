@@ -1,0 +1,31 @@
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 2px solid #acacac;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 350ms transform;
+  #point {
+    border: 2px solid #acacac;
+    border-radius: 9999px;
+    transition: 300ms transform;
+  }
+  &.click {
+    transform: scale(0.3);
+    #point {
+      width: 10px;
+      height: 10px;
+      border-radius: 0;
+      transform: rotate(80deg);
+    }
+  }
+}
