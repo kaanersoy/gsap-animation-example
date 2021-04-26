@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
         {
           async leave(data) {
             await pageTransition()
-            await delay(600)
+            await delay(700)
           },
         },
       ],
     })
     barba.hooks.after(() => {
       window.scrollTo(0, 0)
-      callAllAnimations()
+      callHomeAnimations()
     })
   })
 })
