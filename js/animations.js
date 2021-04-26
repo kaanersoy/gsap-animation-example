@@ -10,9 +10,29 @@ function animateImagesClipPath(selector) {
   })
 }
 
+function scrubElement(selector, scrubX, scrubY) {
+  const getStrings = document.querySelectorAll(selector)
+  getStrings.forEach((str) => {
+    gsap.to(str, {
+      scrollTrigger: {
+        trigger: str,
+        start: 'top center',
+        end: 'top 100px',
+        scrub: 3,
+      },
+      x: scrubX,
+      y: scrubY,
+      ease: 'none',
+      duration: 3,
+    })
+  })
+}
+
 document.addEventListener('DOMContentLoaded', function (event) {
   window.addEventListener('load', function () {
     gsap.registerPlugin(ScrollTrigger)
     animateImagesClipPath('.animate-image')
+    scrubElement('#box-1-head', 10, 150)
+    scrubElement('#scrub', 120, -30)
   })
 })
