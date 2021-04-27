@@ -17,7 +17,7 @@ Demo: [Github Pages - Gsap Animation Example](https://kaanersoy.github.io/gsap-a
 #### 📰 Clone the project
 
 ```bash
-git clone https://github.com/kaanersoy/gsap-horizontal-example.git
+git clone https://github.com/kaanersoy/gsap-animation-example.git
 ```
 
 #### 🔻 Install Dependencies
