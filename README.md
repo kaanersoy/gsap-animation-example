@@ -1,8 +1,11 @@
 # GSAP Scroll Trigger - A basic horizontal page example
 
-A app just shows how to build a horizontal page with Greensock GSAP Scrolltrigger plugin
+A app just shows how to build a scroll-base animated page with Greensock GSAP Scrolltrigger plugin.
+Its very easy-to-use and light-weight.
 
-Demo: [Github Pages - Gsap Animation Example](https://kaanersoy.github.io/gsap-animation-example/)
+#### Demo
+
+[Github Pages - Gsap Animation Example](https://kaanersoy.github.io/gsap-animation-example/)
 
 ## 💻 Techs
 
