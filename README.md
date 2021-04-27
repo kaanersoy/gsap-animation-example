@@ -20,9 +20,19 @@ Demo: [Github Pages - Gsap Animation Example](https://kaanersoy.github.io/gsap-a
 git clone https://github.com/kaanersoy/gsap-horizontal-example.git
 ```
 
+#### 🔻 Install Dependencies
+
+```bash
+bundle install && bundle update
+```
+
 #### 🏃‍♂️ Start the project
 
-Just open it with a LiveServer :)
+```bash
+## add --livereload flag for livereloading
+
+bundle exec jekyll serve
+```
 
 ## ✔ TODO LIST
 
